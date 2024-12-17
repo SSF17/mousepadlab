@@ -1,0 +1,152 @@
+@charset "UTF-8";
+.row .cargar-img .cargar p {
+  text-align: center;
+  padding: 10px;
+  color: #DF2361;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: white;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.container-img .col .img-principal {
+  border-radius: 10px;
+}
+
+.seleccion .container-tamaño .tamaño .btn-tamaño {
+  background-color: white;
+  color: #DF2361;
+  text-align: center;
+  padding: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  height: 50px;
+  border-radius: 10px;
+}
+.seleccion .check-container .check-box .form-check {
+  font-size: 16px;
+}
+.seleccion .check-container .check-box .form-check .form-check-input:checked[type=checkbox] {
+  background-color: #DF2361;
+  border-color: #DF2361;
+}
+.seleccion p {
+  font-size: 20px;
+  color: #DF2361;
+}
+
+.container-añadir .col .btn-añadir {
+  width: 5 0%;
+  padding: 15px;
+  background-color: #DF2361;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 700px) {
+  .container-img .col .img-principal {
+    border-radius: 10px;
+  }
+  .row .cargar-img .cargar p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .container-añadir .col .btn-añadir {
+    width: 300px;
+    padding: 5 15px;
+    background-color: #DF2361;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+}
+.titulo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 85px;
+}
+
+.bi {
+  font-size: 1.5rem;
+}
+
+/* Estos son los estilos del main*/
+.container-producto {
+  text-align: center;
+}
+.container-producto .row .col p {
+  color: #374151;
+}
+.container-producto .row .col p span {
+  color: black;
+}
+.container-producto .row .col .sumar p {
+  text-align: left;
+  color: #DF2361;
+  font-size: 20px;
+}
+.container-producto .row .col .sumar .precio {
+  margin-left: 60%;
+}
+
+.container-botones .row {
+  margin: 10px;
+}
+.container-botones .row .col .btn-compra {
+  width: 300px;
+  padding: 5 15px;
+  border-color: #DF2361;
+  background-color: white;
+  color: #DF2361;
+  font-weight: 500;
+}
+.container-botones .row .col .btn-compra-2 {
+  width: 300px;
+  padding: 5 15px;
+  background-color: #DF2361;
+  color: white;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 700px) {
+  .container-producto {
+    text-align: center;
+  }
+  .container-producto .row .col p {
+    color: #374151;
+  }
+  .container-producto .row .col p span {
+    color: black;
+  }
+  .container-producto .row .col .sumar p {
+    margin-left: 24%;
+    color: #DF2361;
+    font-size: 25px;
+  }
+  .container-producto .row .col .sumar .precio {
+    margin-left: 40%;
+  }
+}
+/* Estos son los estilos del footer*/
+footer {
+  color: white;
+  background-color: #192A4E;
+}
+footer ul {
+  padding: 0;
+}
+footer .ss-img-footer {
+  width: 100%;
+  max-width: 380px;
+  max-height: 140px;
+}
+
+.social-media .bi {
+  padding: 10px;
+  color: #DF2361;
+  background-color: white;
+  border-radius: 50%;
+}/*# sourceMappingURL=parte-leo.css.map */

@@ -1,0 +1,227 @@
+$color-header-footer:#192A4E;
+$color-body:#F5F7FA;
+$color-principal:#DF2361;
+$color-principal-hover:#B01D4E;
+$color-principal-focus:#981640;
+$color-texto:#374151;
+$h1-mobile-size:1.875rem;
+$h1-desktop-size:3.75rem;
+$h2-mobile-size:1.5rem;
+$h2-desktop-size:2.5rem;
+$h3-mobile-size:1.25rem;
+$h3-desktop-size:1.875rem;
+$h4-size:#374151;
+$p-mobile:0.875rem;
+$p-desktop-size:1rem;
+$texto-descriptivo:1rem;
+$texto-medidas:0.75rem;
+$texto-descriptivo-desktop: 2rem;
+
+.row{
+    .cargar-img{
+        .cargar{
+            p{
+                text-align: center;
+                padding: 10px;
+                color: $color-principal;
+                font-size: $p-mobile;
+                font-weight: 600;
+                background-color: white;
+                height: 60px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+.container-img{
+    .col{
+        .img-principal{
+            border-radius: 10px;
+        }
+    }
+}
+
+.seleccion{
+    .container-tamaño{
+        .tamaño{
+              .btn-tamaño{
+                background-color: white;
+                color: $color-principal;
+                text-align: center;
+                padding: 0px;
+                font-size: 20px;
+                font-weight: 500;
+                height: 50px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .check-container{
+        .check-box{
+            .form-check{
+                font-size: 16px;
+                .form-check-input:checked[type=checkbox]{
+                    background-color: $color-principal;
+                    border-color: $color-principal;
+                }
+            }
+        }
+    }
+    p{
+            font-size: 20px;
+            color: $color-principal;
+        }
+}
+
+.container-añadir{
+    .col{   
+        .btn-añadir{
+            width: 5    0%;
+            padding: 15px;
+            background-color: $color-principal;
+            color: white;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .container-img{
+        .col{
+            .img-principal{
+                border-radius: 10px;
+            }
+        }
+    }
+    .row{
+        .cargar-img{
+            .cargar{
+                p{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .container-añadir{
+        .col{   
+            .btn-añadir{
+                width: 300px;
+                padding: 5 15px;
+                background-color: $color-principal;
+                color: white;
+                margin-bottom: 30px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.titulo-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 85px;
+}
+
+.bi{
+    font-size:1.5rem;
+}
+/* Estos son los estilos del main*/
+.container-producto{
+    text-align: center;
+    .row{
+        .col{
+            p{
+                color: $color-texto;
+                span{
+                    color: black;
+                }
+            }
+            .sumar{
+                p{
+                    text-align: left;
+                    color: $color-principal;
+                    font-size: 20px;
+                }
+                .precio{
+                    margin-left: 60%;
+                }
+            }  
+        }
+    }
+}
+
+.container-botones{
+    .row{
+        margin: 10px;
+        .col{   
+            .btn-compra{
+                width: 300px;
+                padding: 5 15px;
+                border-color: $color-principal;
+                background-color: white;
+                color: $color-principal;
+                font-weight: 500;
+            }
+            .btn-compra-2{
+                width: 300px;
+                padding: 5 15px;
+                background-color: $color-principal;
+                color: white;
+                font-weight: 500;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 700px){
+    .container-producto{
+    text-align: center;
+    .row{
+        .col{
+            p{
+                color: $color-texto;
+                span{
+                    color: black;
+                }
+            }
+            .sumar{
+                p{
+                    margin-left: 24%;
+                    color: $color-principal;
+                    font-size: 25px;
+                }
+                .precio{
+                    margin-left: 40%;
+                }
+            }  
+        }
+    }
+}
+}
+/* Estos son los estilos del footer*/
+footer{
+    color: white;
+    background-color: $color-header-footer;
+    ul{
+        padding: 0;
+    }
+.ss-img-footer{
+    width: 100%;
+    max-width: 380px;
+    max-height: 140px;
+}
+}
+.social-media{
+    .bi{
+        padding: 10px;
+        color: $color-principal;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
