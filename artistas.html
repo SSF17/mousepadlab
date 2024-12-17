@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
@@ -24,9 +27,9 @@
             </button>
               </div>
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
-              <ul class="ss-lista navbar-nav justify-content-around text">
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle text border-bottom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <ul class="ss-lista navbar-nav align-items-center justify-content-md-around">
+                  <li class="nav-item dropdown nav-item-diferente">
+                      <a class="nav-link dropdown-toggle text text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Productos
                       </a>
                       <ul class="dropdown-menu">
@@ -34,28 +37,33 @@
                         <li><a class="dropdown-item" href="artistas.html">Diseñado por artistas</a></li>
                         <li><a class="dropdown-item" href="personalizar-playmat.html">Playmat</a></li>
                         <li><a class="dropdown-item" href="personalizar-gifcard.html">Gift card</a></li>
+                        <li><a class="dropdown-item" href="personalizar-cuadro.html">Cuadros</a></li>
                       </ul>
                     </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="personalizar.html">Personalizar</a>
+                  <a class="nav-link text-center" href="personalizar.html">Personalizar</a>
+                </li>
+                <li class="nav-item nav-item-diferente">
+                  <a class="nav-link text-center" href="artistas.html">Artistas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="artistas.html">Artistas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">Quiénes somos</a>
+                  <a class="nav-link text-center" href="quienes-somos.html">Quiénes somos</a>
                 </li>
               </ul>
             </div>
-            <a href="carrito.html"><i class="bi bi-cart2 d-none d-md-block text-white"></i></a>
+            <a href="carrito.html" class="d-none d-md-block"><p class="m-0"><i class="bi bi-cart2 d-none d-md-block text-white"></i></p></a>
           </div>
         </nav>
   </header>
     <main class="position-relative container-fluid p-0 text-center">
         <section class="ss-hero-pag ss-hero-artistas container-fluid text-center align-content-center">
             <h1>Artistas</h1>
-            <p class="texto-descriptivo pb-md-3 pb-sm-2 pb-lg-5">Desde la mente del artista hasta tu escritorio</p>
+            <p class="texto-descriptivo pb-md-2 pb-sm-1 pb-lg-4">Desde la mente del artista hasta tu escritorio</p>
         </section>
+        <ol class="breadcrumb ms-5 mt-3">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="#" class="miga-activa">Artistas</a></li>
+        </ol>
         <section class="container artista text-center py-4 py-md-5 p-lg-0">
             <h2>Selecciona un artista</h2>
             <div class="row row-gap-4">
@@ -161,7 +169,7 @@
             </div>
             </div>
         </section>
-        <div class="position-sticky bottom-0 my-5 h-auto">
+        <div class="position-sticky d-flex justify-content-center bottom-0 mt-5 h-auto">
         <a class="artistas-btn text-center" href="formulario-vende-nosotros.html"> ¿Te gustaría vender tus diseños con nosotros? ¡Inscríbete aquí!</a>
         </div>
     </main>
