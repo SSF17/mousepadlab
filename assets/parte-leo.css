@@ -8,6 +8,7 @@
   background-color: white;
   height: 60px;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .container-img .col .img-principal {
@@ -129,24 +130,4 @@
   .container-producto .row .col .sumar .precio {
     margin-left: 40%;
   }
-}
-/* Estos son los estilos del footer*/
-footer {
-  color: white;
-  background-color: #192A4E;
-}
-footer ul {
-  padding: 0;
-}
-footer .ss-img-footer {
-  width: 100%;
-  max-width: 380px;
-  max-height: 140px;
-}
-
-.social-media .bi {
-  padding: 10px;
-  color: #DF2361;
-  background-color: white;
-  border-radius: 50%;
 }/*# sourceMappingURL=parte-leo.css.map */

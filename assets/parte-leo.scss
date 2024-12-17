@@ -29,6 +29,7 @@ $texto-descriptivo-desktop: 2rem;
                 background-color: white;
                 height: 60px;
                 border-radius: 10px;
+                transition: all 0.3s ease;
             }
         }
     }
@@ -203,25 +204,4 @@ $texto-descriptivo-desktop: 2rem;
         }
     }
 }
-}
-/* Estos son los estilos del footer*/
-footer{
-    color: white;
-    background-color: $color-header-footer;
-    ul{
-        padding: 0;
-    }
-.ss-img-footer{
-    width: 100%;
-    max-width: 380px;
-    max-height: 140px;
-}
-}
-.social-media{
-    .bi{
-        padding: 10px;
-        color: $color-principal;
-        background-color: white;
-        border-radius: 50%;
-    }
 }

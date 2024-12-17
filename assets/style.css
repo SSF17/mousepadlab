@@ -4,7 +4,7 @@
 }
 
 .large-btn-mobile-2:hover {
-  background-color: #B01D4E;
+  background-color: white;
 }
 
 .small-btn-mobile:hover {
@@ -23,6 +23,7 @@ body {
 
 h1 {
   font-size: 1.875rem;
+  font-family: "Press Start 2P";
 }
 
 h2 {
@@ -65,7 +66,7 @@ header {
 }
 
 .navbar-brand {
-  width: 40%;
+  width: 30%;
 }
 
 .navbar-nav {
@@ -74,35 +75,39 @@ header {
 
 .navbar-collapse.show {
   background-color: #F5F7FA;
-  width: 50%;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   align-items: flex-start;
   z-index: 5;
 }
 
 .navbar-collapse.show .ss-lista {
-  height: 50%;
+  height: 100%;
   align-items: center;
   justify-content: space-between;
   border-color: #DF2361;
 }
 
 .navbar-collapse.show .nav-link {
-  color: #374151;
+  color: white;
+  width: 100%;
   font-size: 1.25rem;
+  border-bottom: #DF2361;
 }
 
-.navbar-collapse ul.dropdown-menu.show {
+.navbar-collapse.show .nav-item {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 30vh;
-}
-.navbar-collapse ul.dropdown-menu.show li {
-  border-bottom: 1px solid #DF2361;
+  justify-content: center;
   width: 100%;
+  height: 20%;
+  background-color: #192A4E;
+}
+
+.navbar-collapse.show .nav-item-diferente {
+  width: 100%;
+  color: white;
+  background-color: #DF2361;
 }
 
 .bi {
@@ -121,6 +126,18 @@ header {
 }
 .ss-hero-img div {
   margin-top: 3.125rem;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: #374151;
+}
+
+.breadcrumb .breadcrumb-item a:hover:not(.miga-activa) {
+  color: #6b717a;
+}
+
+.breadcrumb .breadcrumb-item .miga-activa {
+  color: #DF2361;
 }
 
 .large-btn-mobile {
@@ -270,6 +287,17 @@ header {
 }
 
 /* Aqui terminan los estilos del home*/
+/*estilos seccion personalizar*/
+.row .cargar-img .cargar p:hover {
+  background-color: #DF2361;
+  color: white;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+/* Aqui terminan los estilos de personaliazar*/
 /* Estos son los estilos de catalogo*/
 .ss-hero-pag:not(.ss-hero-img) {
   background-position: center;
@@ -306,6 +334,9 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/hero-artistas.jpeg");
 }
 
+.artista {
+  overflow: hidden;
+}
 .artista div.card {
   border-radius: 8px;
 }
@@ -317,7 +348,19 @@ header {
   color: #374151;
 }
 
+.artista .card {
+  overflow: hidden;
+}
+.artista .card img {
+  transition: all 0.3s ease;
+}
+
+.artista .card:hover img {
+  transform: scale(1.2);
+}
+
 .artistas-btn {
+  display: block;
   border: 2px solid #DF2361;
   color: #DF2361;
   background-color: white;
@@ -326,11 +369,17 @@ header {
   width: 100%;
   max-width: 450px;
   height: auto;
-  transform: translateX(-50%);
   margin-bottom: 2rem;
   font-size: 1rem;
   border-radius: 8px;
   padding: 1rem 0.5rem 1rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.artistas-btn:hover {
+  background-color: #DF2361;
+  color: #F5F7FA;
+  border-color: #F5F7FA;
 }
 
 /* aqui terminan los estilos de catalogo*/
@@ -395,7 +444,7 @@ header {
 }
 
 section > h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn-tamaño {
@@ -412,6 +461,10 @@ section > h2 {
   margin-bottom: 3rem;
 }
 
+.carrito-elemento .bi {
+  cursor: pointer;
+}
+
 .iconos-carrito {
   color: #DF2361;
 }
@@ -420,6 +473,29 @@ section > h2 {
   color: #374151;
 }
 
+/* Estos son los estilos de quienes somos*/
+.quienes-somos .bi {
+  color: #DF2361;
+}
+
+.quienes-somos h2 {
+  margin-top: 1rem;
+}
+
+.valores-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  border: 2px solid #374151;
+  background-color: white;
+  height: auto;
+  min-height: 320px;
+  margin-bottom: 3rem;
+}
+
+/* aqui terminan los estilos de quienes somos*/
 /* Estos son los estilos del footer*/
 footer {
   color: white;
@@ -531,6 +607,12 @@ footer .ss-img-footer {
     font-size: 1.5rem;
     color: #374151;
   }
+  .artistas-btn {
+    font-size: 1.5rem;
+  }
+  section > h2 {
+    margin-bottom: 3rem;
+  }
 }
 @media (min-width: 992px) {
   .ss-hero-img {
@@ -565,7 +647,7 @@ footer .ss-img-footer {
     color: #B01D4E;
   }
   section, .img-descriptiva {
-    margin: 5rem 0 5rem 0;
+    margin: 3rem 0 4rem 0;
   }
   .ss-hero-pag {
     margin: 0;
@@ -599,7 +681,7 @@ footer .ss-img-footer {
     height: 330px;
   }
   .bi-mouse-fill {
-    font-size: 3rem;
+    font-size: 4rem;
     position: absolute;
     bottom: 5%;
     right: 5%;
@@ -614,6 +696,7 @@ footer .ss-img-footer {
   background-color: white;
   height: 60px;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .container-img .col .img-principal {
@@ -735,24 +818,4 @@ footer .ss-img-footer {
   .container-producto .row .col .sumar .precio {
     margin-left: 40%;
   }
-}
-/* Estos son los estilos del footer*/
-footer {
-  color: white;
-  background-color: #192A4E;
-}
-footer ul {
-  padding: 0;
-}
-footer .ss-img-footer {
-  width: 100%;
-  max-width: 380px;
-  max-height: 140px;
-}
-
-.social-media .bi {
-  padding: 10px;
-  color: #DF2361;
-  background-color: white;
-  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
