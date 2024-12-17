@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mousepadlab - Personalizar </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <header class="position-absolute">
+      <nav class="navbar navbar-expand-md">
+          <div class="ss-container-nav container">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/mousepadlab.png" alt="logo de mousepadlab" class="logo-header d-sm-none" width="110" height="40">
+              <img src="assets/img/mousepadlab.png" alt="logo de mousepadlab" class="logo-header d-none d-sm-block" width="200" height="70"></a>
+              <div>
+              <a href="carrito.html"><i class="bi bi-cart2 d-md-none text-white"></i></a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-list text-white"></i>
+            </button>
+              </div>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+              <ul class="ss-lista navbar-nav justify-content-around text">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text border-bottom" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="personalizar.html">Personalizados</a></li>
+                        <li><a class="dropdown-item" href="artistas.html">Diseñado por artistas</a></li>
+                        <li><a class="dropdown-item" href="personalizar-playmat.html">Playmat</a></li>
+                        <li><a class="dropdown-item" href="personalizar-gifcard.html">Gift card</a></li>
+                      </ul>
+                    </li>
+                <li class="nav-item activo">
+                  <a class="nav-link activo" href="personalizar.html">Personalizar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="artistas.html">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quiénes somos</a>
+                </li>
+              </ul>
+            </div>
+            <a href="carrito.html"><i class="bi bi-cart2 d-none d-md-block text-white"></i></a>
+          </div>
+        </nav>
+  </header>
+    <main>
+      <section class="ss-hero-pag ss-hero-personalizar container-fluid text-center align-content-center">
+        <h1>Personalizar</h1>
+    </section>
+      <section class="container text-center py-4 py-md-5 p-lg-0">
+        <h2>Selecciona un diseño de mousepad</h2>
+        <div class="row">
+          <div class="d-flex justify-content-center">
+          <div class="col-lg-8">
+          <div class="cargar-img d-flex justify-content-between col-12">
+            <a class="cargar cargar-url col-4" href="#">
+              <p><i class="bi bi-link-45deg me-4"></i>URL</p>
+            </a>
+            <a class="cargar cargar-imagen col-md-6 col-7" href="#">
+              <p><i class="bi bi-box-arrow-up me-4"></i>Cargar Imagen</p>
+            </a> 
+          </div>
+        <div class="container-img">
+          <div>
+            <img class="img-fluid img-principal" src="assets/img/personalizar-mousepad.jpg" alt="imagen-referencia">
+            <p class="text-start opacity-75">* imagen cargada</p>
+          </div>
+        </div>
+        <div class="seleccion d-flex justify-content-md-between flex-column flex-md-row align-items-center col-12">
+          <div class="container-tamaño col-md-6 col-12">
+            <div class="tamaño">
+              <select class="btn-tamaño form-select" aria-label="Default select example">
+                <option selected>Selecciona un tamaño</option>
+                <option value="1">80 X 30</option>
+                <option value="2">90 X 40</option>
+                <option value="3">122 X 61</option>
+              </select>
+            </div>
+          </div>
+          <div class="check-container col-md-4 col-12">
+            <div class="check-box d-flex justify-content-between">
+              <div class="form-check">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Waterproff
+                </label>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Bordado
+                </label>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="ss-precio-personalizar text-center my-4">$9.990</p> 
+        <div class="container-añadir">
+          <div class="d-flex justify-content-center">
+            <a type="submit" class="large-btn-mobile col-12 border-0 d-flex justify-content-center align-items-center" href="carrito.html">Añadir al carrito</button>
+            </a>
+        </div>
+      </div>
+      </div>
+    </div>
+      </section>
+    </main>
+    <footer class="container-fluid text-start text-sm-center">
+        <div class="container">
+            <img src="assets/img/mousepadlab.png" class="ss-img-footer" alt="imagen del logo de mousepadlab">
+            <div class="row py-4 justify-content-center">
+              <div class="col-12 col-sm-5 justify-content-center text-sm-center">
+                  <h4>Contacto</h4>
+              <ul>
+                  <li>Whatsapp</li>
+                  <li>Correo</li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-5 justify-content-center text-sm-center">
+                <h4>Tienda</h4>
+            <ul>
+                <li>Preguntas frecuentes</li>
+                <li>Envíos</li>
+                <li>Términos y condiciones</li>
+            </ul>
+            </div>
+            <div class="col-12 col-sm-5 justify-content-center text-start text-sm-center">
+                <h4>Medios de pago</h4>
+            <ul>
+                <li>Crédito y debito</li>
+                <li>Transferencias</li>
+                <li>Depósitos</li>
+            </ul>
+            </div>
+            <div class="d-flex d-sm-block social-media justify-content-between justify-content-sm-center py-3 col-12 col-sm-5 text-start text-sm-center">
+              <h4 class="d-none d-sm-block mb-3">Síguenos</h4>
+                <i class="bi bi-tiktok text-center"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
